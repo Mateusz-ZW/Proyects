@@ -1,0 +1,4 @@
+module-info.class
+com\mycompany\ejemplointerfazhotel\FormularioPrincipalController.class
+com\mycompany\ejemplointerfazhotel\FXMLController.class
+com\mycompany\ejemplointerfazhotel\App.class

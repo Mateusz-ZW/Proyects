@@ -1,0 +1,4 @@
+module-info.class
+com\mycompany\gestionhotel\App.class
+com\mycompany\gestionhotel\FXMLController.class
+com\mycompany\gestionhotel\FormPrincipalController.class

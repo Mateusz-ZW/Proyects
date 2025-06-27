@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ejemplointerfazhotel.FXMLController">
+   <children>
+      <Label layoutX="207.0" layoutY="21.0" prefHeight="27.0" prefWidth="186.0" text="DATOS DEL CLIENTE" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="72.0" text="DNI">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="115.0" text="APELLIDOS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="156.0" text="LOCALIDAD">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="72.0" text="NOMBRE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="156.0" text="PROVINCIA">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="106.0" layoutY="68.0" />
+      <TextField layoutX="133.0" layoutY="111.0" prefHeight="25.0" prefWidth="407.0" />
+      <TextField layoutX="140.0" layoutY="152.0" />
+      <TextField layoutX="337.0" layoutY="68.0" prefHeight="25.0" prefWidth="203.0" />
+      <TextField layoutX="384.0" layoutY="152.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="211.0" layoutY="187.0" prefHeight="27.0" prefWidth="203.0" text="DATOS DE LA RESERVA" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="228.0" text="Fecha de llegada:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="228.0" text="Fecha de salida:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="53.0" layoutY="252.0" />
+      <DatePicker layoutX="370.0" layoutY="252.0" />
+      <Label layoutX="56.0" layoutY="366.0" text="Numero de habitaciones:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="201.0" layoutY="362.0" prefHeight="25.0" prefWidth="32.0" />
+      <Label layoutX="251.0" layoutY="366.0" text="Tipo de habitación:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox" layoutX="364.0" layoutY="362.0" prefWidth="150.0" />
+      <CheckBox fx:id="checkBox" layoutX="253.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleCheckBox" text="Fumador">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="56.0" layoutY="415.0" text="Régimen">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="53.0" layoutY="442.0" mnemonicParsing="false" text="Alojamiento y desayuno">
+         <toggleGroup>
+            <ToggleGroup fx:id="RadioRE" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="53.0" layoutY="459.0" mnemonicParsing="false" text="Media pensión" toggleGroup="$RadioRE" />
+      <RadioButton layoutX="53.0" layoutY="476.0" mnemonicParsing="false" text="Pensión completa" toggleGroup="$RadioRE" />
+      <Button fx:id="bAceptar" layoutX="318.0" layoutY="481.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="72.0" text="Aceptar" />
+      <Button layoutX="414.0" layoutY="481.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Cancelar" />
+      <Label fx:id="labelAviso" layoutX="288.0" layoutY="414.0" prefHeight="55.0" prefWidth="229.0" text="En virtud de la ley de sanidad se informa a los clientes de que solo podrán fumar en las habitaciones reservadas para tal fin" textAlignment="CENTER" textFill="#e41313" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.mycompany.gestionhotel.FormPrincipalController">
+    <stylesheets>
+        <URL value="@/styles/formprincipal.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="200.0" layoutX="76.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/WhatsApp%20Image%202024-11-09%20at%2000.27.25.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bReservas" layoutX="290.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleBReservas" text="Reservas" />
+      <Button fx:id="bSalir" layoutX="290.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleBSalir" text="Salir" />
+   </children>
+</AnchorPane>

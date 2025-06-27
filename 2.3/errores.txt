@@ -1,0 +1,2 @@
+Error: Could not find or load main class pk2.pk3.Sumador
+Caused by: java.lang.ClassNotFoundException: pk2.pk3.Sumador
